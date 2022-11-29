@@ -10,10 +10,13 @@ def button_click(event):
     if num[0]==0:
         entry.delete(0,tk.END)
 
+
     if num == "=":
+
         siki = entry.get() 
-        if siki[0]==0:
-            res=0
+        
+        #siki.split('sqrt')
+        #siki.replace('sqrt',',')
         res = eval(siki) 
         entry.delete(0, tk.END) 
         entry.insert(tk.END, res) 
@@ -28,9 +31,16 @@ def button_click(event):
         #entry.insert(tk.END,"**")
 
     elif num == "sqrt":
-        
+        res = eval(siki)
         entry.delete(0, tk.END) 
         entry.insert(tk.END, res) 
+
+    elif num == "mod":
+        siki=entry.get()
+        f=1
+
+    
+        
 
     else: 
         entry.insert(tk.END, num)
@@ -61,7 +71,7 @@ for sonota in sonotas:
     button.bind("<1>", button_click)
     b+=1
 
-operators = ["+","=","-",".","/","×"]
+operators = ["+", "=", "-", ".", "/", "×"]
 for ope in operators:
     button = tk.Button(root, text=f"{ope}", width=4, height=2, font=("", 30))
     button.grid(row=r, column=c)
