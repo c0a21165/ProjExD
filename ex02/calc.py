@@ -64,7 +64,7 @@ for num in range(9, -1, -1):
         c = 0
 
 a,b=4,1
-sonotas=["CE","**","%"]
+sonotas=["CE","**","mod"]
 for sonota in sonotas:
     button = tk.Button(root, text=f"{sonota}", width=4, height=2, font=("", 30))
     button.grid(row=b, column=a)
