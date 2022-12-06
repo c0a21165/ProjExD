@@ -37,7 +37,7 @@ def main_proc():
     
     #gx, gy = mx2*100, my2*100
     canvas.coords("kokaton", cx, cy)
-    canvas.coords("goal",)
+    canvas.coords("goal",150,150)
     count=my+mx
     if count ==5:
         henka()
