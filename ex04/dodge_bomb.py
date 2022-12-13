@@ -76,7 +76,6 @@ def main():
         # 練習4
         key_dct = pg.key.get_pressed() # 辞書型
         if key_dct[pg.K_UP]:
-            
             tori_rct.centery -= 1
             
         if key_dct[pg.K_DOWN]:
