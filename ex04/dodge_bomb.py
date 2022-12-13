@@ -126,15 +126,13 @@ def main():
         x=pg.time.get_ticks()
         henka(x)
         #y=pg.key.name()
-        #if y in "t":
-        #   pg.time.wait(1000)
+        #if y == "t":
+         #   pg.time.wait(1000)
 
         # 練習８
-        if tori_rct.colliderect(bomb_rct):
+        if tori_rct.colliderect(bomb_rct) or tori_rct.colliderect(bomb2_rct):
             return
 
-        if tori_rct.colliderect(bomb2_rct):
-            return
 
         pg.display.update()
         clock.tick(1000)
