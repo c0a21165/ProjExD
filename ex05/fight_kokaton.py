@@ -89,6 +89,7 @@ def check_bound(obj_rct, scr_rct):
         tate = -1
     return yoko, tate
 
+#追加したかった機能　弾をだすこうかとん
 '''
 def load_image(file):
     """loads an image, prepares it for play"""
@@ -174,6 +175,8 @@ def main():
     clock =pg.time.Clock()
     alarm()
     boom_sound = load_sound("boom.wav")
+
+#追加したかった機能　弾をだすこうかとん
     '''
     #img = load_image("player1.gif")
     img=pg.image.load("fig/6.jpg")
@@ -218,6 +221,7 @@ def main():
         pg.display.update()
         clock.tick(1000)
 
+#追加したかった機能　弾をだすこうかとん
         '''
         keystate = pg.key.get_pressed()
 
