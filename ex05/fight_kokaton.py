@@ -83,9 +83,11 @@ def check_bound(obj_rct, scr_rct):
     範囲内：+1／範囲外：-1
     """
     yoko, tate = +1, +1
-    if obj_rct.left < scr_rct.left or scr_rct.right < obj_rct.right:
+    if (obj_rct.left < scr_rct.left or
+       scr_rct.right < obj_rct.right):
         yoko = -1
-    if obj_rct.top < scr_rct.top or scr_rct.bottom < obj_rct.bottom:
+    if (obj_rct.top < scr_rct.top or
+       scr_rct.bottom < obj_rct.bottom):
         tate = -1
     return yoko, tate
 
